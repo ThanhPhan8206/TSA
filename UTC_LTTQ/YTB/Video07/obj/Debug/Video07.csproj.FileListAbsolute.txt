@@ -1,0 +1,10 @@
+C:\LapTrinh\UTC_LTTQ\YTB\Video07\bin\Debug\Video07.exe.config
+C:\LapTrinh\UTC_LTTQ\YTB\Video07\bin\Debug\Video07.exe
+C:\LapTrinh\UTC_LTTQ\YTB\Video07\bin\Debug\Video07.pdb
+C:\LapTrinh\UTC_LTTQ\YTB\Video07\obj\Debug\Video07.csproj.AssemblyReference.cache
+C:\LapTrinh\UTC_LTTQ\YTB\Video07\obj\Debug\Video07.Form1.resources
+C:\LapTrinh\UTC_LTTQ\YTB\Video07\obj\Debug\Video07.Properties.Resources.resources
+C:\LapTrinh\UTC_LTTQ\YTB\Video07\obj\Debug\Video07.csproj.GenerateResource.cache
+C:\LapTrinh\UTC_LTTQ\YTB\Video07\obj\Debug\Video07.csproj.CoreCompileInputs.cache
+C:\LapTrinh\UTC_LTTQ\YTB\Video07\obj\Debug\Video07.exe
+C:\LapTrinh\UTC_LTTQ\YTB\Video07\obj\Debug\Video07.pdb

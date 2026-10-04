@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng hợp kiến thức HTML5 - Bài 3</title>
+</head>
+<body>
+
+    <!-- 1. THẺ SEMANTIC: header, nav[cite: 6] -->
+    <header>
+        <h1>Bài Tập Tổng Hợp Kiến Thức Slide Bài 3</h1>
+        <nav>
+            <a href="#phan-iframe">Phần Iframe</a> | 
+            <a href="#phan-form">Phần Form</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- 2. THẺ SEMANTIC: main[cite: 6] -->
+    <main>
+        
+        <!-- THẺ SEMANTIC: section[cite: 6] -->
+        <section id="phan-iframe">
+            <h2>1. Demo Nhúng Iframe và Semantic HTML5</h2>
+            
+            <!-- THẺ SEMANTIC: article, mark, figure, figcaption, details, summary[cite: 6] -->
+            <article>
+                <h3>Giới thiệu về Iframe</h3>
+                <p>Thẻ Iframe cho phép nhúng một trang web khác vào trang web hiện tại. Chú ý phần chữ <mark>được bôi vàng</mark> bằng thẻ mark[cite: 6].</p>
+                
+                <figure>
+                    <img src="https://via.placeholder.com/150" alt="Ảnh minh họa">
+                    <figcaption>Hình 1: Đây là chú thích cho ảnh bằng figcaption[cite: 6]</figcaption>
+                </figure>
+
+                <details>
+                    <summary>Click để xem chi tiết bổ sung (details/summary)[cite: 6]</summary>
+                    <p>Nội dung này được ẩn/hiện nhờ thẻ semantic của HTML5.</p>
+                </details>
+            </article>
+
+            <!-- THẺ SEMANTIC: aside, kết hợp Iframe và thẻ a target[cite: 6] -->
+            <aside>
+                <h3>Thanh bên (Aside) - Test Iframe[cite: 6]</h3>
+                <p>
+                    <a href="https://vi.wikipedia.org/" target="khung_hien_thi">Mở Wikipedia trong Iframe bên dưới[cite: 6]</a>
+                </p>
+                <!-- Thuộc tính src, title, width, height, name[cite: 6] -->
+                <iframe src="about:blank" name="khung_hien_thi" title="Khung hiển thị web" width="600" height="300"></iframe>
+            </aside>
+        </section>
+
+        <hr>
+
+        <section id="phan-form">
+            <h2>2. Demo Tổng hợp Forms và Input Types</h2>
+            
+            <!-- FORM ATTRIBUTES: action, target, method, autocomplete, novalidate[cite: 6] -->
+            <form action="/xuly.php" target="_blank" method="POST" autocomplete="on" novalidate>
+                
+                <h3>A. Các thẻ Input cơ bản và Thuộc tính</h3>
+                
+                <!-- LABEL kết hợp INPUT bằng for và id[cite: 6] -->
+                <label for="hoTen">Nhập text (có placeholder, required):</label><br>
+                <input type="text" id="hoTen" name="hoTen" placeholder="Nhập họ tên..." required><br><br>
+
+                <label for="matKhau">Nhập password (có maxlength):</label><br>
+                <!-- Thuộc tính maxlength[cite: 6] -->
+                <input type="password" id="matKhau" name="matKhau" maxlength="10"><br><br>
+
+                <label for="thuDienTu">Nhập email (có multiple):</label><br>
+                <!-- Thuộc tính multiple áp dụng cho email[cite: 6] -->
+                <input type="email" id="thuDienTu" name="thuDienTu" multiple><br><br>
+                
+                <label for="tuoi">Nhập number (có min, max, value):</label><br>
+                <!-- Thuộc tính min, max, value[cite: 6] -->
+                <input type="number" id="tuoi" name="tuoi" min="1" max="100" value="18"><br><br>
+
+                <label for="maCode">Trường chỉ đọc (readonly):</label><br>
+                <!-- Thuộc tính readonly[cite: 6] -->
+                <input type="text" id="maCode" name="maCode" value="READ-ONLY-123" readonly><br><br>
+
+                <label for="voHieu">Trường vô hiệu hóa (disabled):</label><br>
+                <!-- Thuộc tính disabled[cite: 6] -->
+                <input type="text" id="voHieu" name="voHieu" value="Không thể nhập và không gửi đi" disabled><br><br>
+
+                <h3>B. Các thẻ Input thời gian & nâng cao</h3>
+
+                <label for="ngaySinh">Chọn date (năm, tháng, ngày):</label><br>
+                <input type="date" id="ngaySinh" name="ngaySinh"><br><br>
+
+                <label for="gioHen">Chọn time (giờ, phút):</label><br>
+                <input type="time" id="gioHen" name="gioHen"><br><br>
+
+                <label for="ngayGio">Chọn datetime-local:</label><br>
+                <input type="datetime-local" id="ngayGio" name="ngayGio"><br><br>
+
+                <label for="mauSac">Chọn color:</label><br>
+                <input type="color" id="mauSac" name="mauSac"><br><br>
+
+                <label for="mucDo">Kéo range (thanh trượt):</label><br>
+                <input type="range" id="mucDo" name="mucDo" min="0" max="100"><br><br>
+
+                <label for="taiTep">Chọn file (có multiple):</label><br>
+                <!-- Kiểu file và multiple[cite: 6] -->
+                <input type="file" id="taiTep" name="taiTep" multiple><br><br>
+
+                <h3>C. Checkbox, Radio, Select, Textarea</h3>
+
+                <label>Chọn checkbox (nhiều lựa chọn):</label><br>
+                <input type="checkbox" id="soThich1" name="soThich" value="DocSach">
+                <label for="soThich1">Đọc sách</label>
+                <input type="checkbox" id="soThich2" name="soThich" value="NgheNhac">
+                <label for="soThich2">Nghe nhạc</label><br><br>
+
+                <label>Chọn radio (chỉ 1 lựa chọn):</label><br>
+                <input type="radio" id="nam" name="gioiTinh" value="Nam">
+                <label for="nam">Nam</label>
+                <input type="radio" id="nu" name="gioiTinh" value="Nu">
+                <label for="nu">Nữ</label><br><br>
+
+                <label for="thanhPho">Thẻ select (có size, multiple, selected):</label><br>
+                <!-- Select attributes: size, multiple[cite: 6] -->
+                <select id="thanhPho" name="thanhPho" size="3" multiple>
+                    <option value="hn">Hà Nội</option>
+                    <!-- Tùy chọn mặc định được chọn[cite: 6] -->
+                    <option value="hcm" selected>TP. Hồ Chí Minh</option> 
+                    <option value="dn">Đà Nẵng</option>
+                </select><br><br>
+
+                <label for="ghiChu">Thẻ textarea (có rows, cols):</label><br>
+                <!-- Textarea attributes: rows, cols[cite: 6] -->
+                <textarea id="ghiChu" name="ghiChu" rows="5" cols="40"></textarea><br><br>
+
+                <!-- THẺ SEMANTIC & FORM ELEMENT: button[cite: 6] -->
+                <button type="submit">Gửi Dữ Liệu</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- THẺ SEMANTIC: footer[cite: 6] -->
+    <footer>
+        <p>Bản quyền © Bài tập thực hành HTML5 và Forms.</p>
+    </footer>
+
+</body>
+</html>
